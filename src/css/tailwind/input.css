@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .link-activate {
+      @apply text-secondary-color border-2 border-secondary-color rounded-md px-2 cursor-pointer;
+    }
+
+    .link-desactivate {
+        @apply text-gray-300 cursor-pointer;
+    }
+
+    .box-article {
+      @apply mx-auto flex flex-col mt-8 px-4 py-4 border border-gray-300 rounded bg-white shadow-md max-w-screen-lg;
+    }
+
+    .box-info {
+      @apply mx-auto mb-8 px-4 py-4 bg-cyan-100 bg-opacity-80 border border-cyan-200 rounded;
+    } 
+}
