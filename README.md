@@ -21,4 +21,4 @@ Jesús olmos (codigoenlaweb)
 
 ## Link to the page
 
-[http://generatorQR](http://generatorQR "http://generatorQR")
+[http://generatorQR](https://codigoenlaweb.github.io/qr-generator/ "https://codigoenlaweb.github.io/qr-generator/")
