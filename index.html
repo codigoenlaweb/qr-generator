@@ -14,9 +14,9 @@
       >
         <h1 class="mb-4 sm:mb-0 text-2xl text-gray-300">QR Generator</h1>
         <ul class="flex items-center mx-auto sm:mx-0 justify-between w-52 px-4">
-          <li class="link-activate" id="link">URL</li>
-          <li class="link-desactivate" id="link">TEXT</li>
-          <li class="link-desactivate" id="link">EMAIL</li>
+          <li class="link-activate transition-all duration-300 ease-linear" id="link">URL</li>
+          <li class="link-desactivate transition-all duration-300 ease-linear" id="link">TEXT</li>
+          <li class="link-desactivate transition-all duration-300 ease-linear" id="link">EMAIL</li>
         </ul>
       </div>
     </header>
@@ -34,15 +34,16 @@
         </div>
 
         <input
-          class="w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
+          class="transition-general w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
           type="url"
           name="input"
           id="input"
           placeholder="https://www.something.com/"
+          required
         />
 
         <input
-          class="hidden w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
+          class="opacity-0 transition-general hidden w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
           type="email"
           name="input"
           id="input"
@@ -50,14 +51,14 @@
         />
 
         <textarea
-          class="hidden w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
+          class="opacity-0 transition-general hidden w-full max-w-sm mx-auto shadow px-1 border border-gray-400 rounded bg-gray-100 focus:border-cyan-200"
           rows="5"
           name="input"
           id="input"
           placeholder="Write your text"
         ></textarea>
 
-        <div id="error" class="hidden mx-auto mt-2 px-4 py-2 rounded bg-red-400 border border-secondary-color">
+        <div id="error" class="transition-general opacity-0 hidden mx-auto mt-2 px-4 py-2 rounded bg-red-400 border border-secondary-color">
           <p class="text-red-800">the field is cannot be empty</p>
         </div>
 
@@ -78,11 +79,17 @@
           </div>
         </div>
         <div
-          class="mx-auto mb-2 border border-gray-300 w-60 h-60 px-2 py-2"
+          class="mx-auto mb-2 mt-2 border border-gray-300 w-60 h-60 px-2 py-2"
           id="qrcode"
         ></div>
+        
+        <a class="mb-2 transition-general hidden opacity-0 mx-auto w-40 mt-2 bg-secondary-color text-center py-2 rounded-md text-gray-300 font-bold shadow-sm shadow-rose-800" href="" id="download-image" download>Download image</a>
       </article>
     </main>
+
+    <footer class="w-full px-4 sm:px-10 py-6 bg-primary-color mt-8">
+      <h2 class="font-serif text-gray-300 font-bold text-lg text-center">Made and &copy;copyright by Jesús Olmos | Codigoenlaweb</h2>
+    </footer>
 
     <script src="src/js/qrcode.js"></script>
     <script src="src/js/main.js"></script>

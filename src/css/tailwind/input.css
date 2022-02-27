@@ -18,4 +18,8 @@
     .box-info {
       @apply mx-auto mb-8 px-4 py-4 bg-cyan-100 bg-opacity-80 border border-cyan-200 rounded;
     } 
+
+    .transition-general {
+      @apply transition-all duration-300 ease-linear;
+    }
 }
